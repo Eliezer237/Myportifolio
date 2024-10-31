@@ -3,39 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portifolio</title>
+     <!-- no needed if it works delete later -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+     <!-- css font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> -->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+          <!-- font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/styles.css">
-     <script src="script.js" defer></script> 
+    <title>My portfolio</title>
+   
 </head>
 <body>
 
-   
-        <h1>Welcome to my portifolio</h1>
-    
-    <nav>
+         <!--............... header.................    -->
+         <header class="header">
+            <a href="Eliezer" class="logo">Portfolio</a>
+            <nav>
+                <div>
+                    <ul class="nav-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </header>
+        
 
-    
-        <ul class="Sidebar">
-          <li onclick= hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-            <li><a href="/">HOME</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/projects">Projects</a></li>
-            <li><a href="/skills">Skills</a></li>
-            <li><a href="/contact">CONTACT</a></li>
-      
-        </ul>
-    
-        <ul>
-            <li><a href="/">HOME</a></li>
-            <li class="hideOnMobile"><a href="/about"> About</a></li>
-             <li class="hideOnMobile"><a href="/projects">Projects</a></li>
-              <li class="hideOnMobile"><a href="/skills">Skills</a></li>
-            <li class="hideOnMobile"><a href="/contact">Contact</a></li>
-           
-            <button onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></button>
-            
-        </ul>
-    </nav>
 
+          <!--............... Section about.................    -->
+         <section class="home_data" id="home">
+           <div class="home_content">
+            <h3><span>Hello,</span>I'm</h3>
+            <h1>Eliezer Niyorukundo</h1>
+            <h3>Computer Informatics @ <br>Jönköping University</h3>
+
+            <div class="social_media">
+             <a href="#"><i class="fa-brands fa-facebook"></i></a>
+             <a href="#"><i class="fa-brands fa-instagram"></i></a>
+             <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+             <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+               <a href="#" class="btn">Download CV</a>
+            </div>
+              <div class="home_img">
+              <img src="img/photo8.jpg" alt="">
+              </div>
+          </section>
+
+          <!--...............about Section Design.................    -->
+          <section class="about" id="about">
+            <div class="about_img">
+             <img src="img/ifoto.jpg" alt="">
+            </div>
+            <div class="about_content">
+              <h2 class="heading">About<span>Me</span></h2>
+              <h3>Introduction</h3>
+              <p>I am a Software Engineer specializing in web development with expertise in front-end (HTML, CSS, JavaScript, Vue.js)
+                and back-end (Node.js, SQL) technologies.<br>
+               I build responsive, user-focused web applications and ensure seamless performance between front and back-end systems.<br>
+               Passionate about clean, maintainable code,
+                I follow best practices while striving for continuous improvement to deliver high-quality solutions that meet project goals.</p>
+
+              <a href="#" class="btn">Read more</a>
+            </div>
+          </section>
+         <!--...............skills section.................    -->
+         <section class="skills" id="skills">
+          <h2>My <span>Skills</span></h2>
+          <div class="skills_container">
+            <div class="skills_box">
+                <i class='bx bxl-figma'></i>
+                <h1>Front-end</h1>
+                <p>Html,css,JavaScript and vue.js </p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+            <div class="skills_box">
+                <i class='bx bxl-figma'></i>
+                <h1>Back-end</h1>
+                <p>Node.js and SQL</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+            <div class="skills_box">
+                <i class='bx bxl-figma'></i>
+                <h1>UI/UX</h1>
+                <p>Figma</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+          </div>
+         </section>
+         <!--...............contact section.................    -->
+          <section class="contact" class="contact no-gap" id="contact">
+           <h2 class="heading">contact <span>me</span></h2>
+
+           <form action="#">
+            <div class="input_box">
+                <input type="text" placeholder="Fullname">
+           </div>
+           <div class="input_box">
+            <input type="email" placeholder="Email">
+           </div>
+           <div class="input_box">
+              <input type="text" placeholder="Email Subject">
+           </div>
+           <textarea name="" id="" cols="30" rows="10" placeholder="your message"></textarea>
+           <input type="submit" value="Send message" class="btn">
+           </form>
+         </section>
+          <!--...............footer.................    -->
+          <footer class="footer">
+          <div class="footer_text">
+            <h1>Eliezer N <br>Software Engineer</h1>
+          </div>
+          <div class="social_media">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+           </div>
+           <div class="footer_icon">
+            <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+           </div>
+        </footer>
+          <!--...............script js.................    -->
+        <script src="script.js"></script>
+         
 </body>
 </html>
